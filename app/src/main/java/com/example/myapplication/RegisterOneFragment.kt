@@ -5,15 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.myapplication.databinding.FragmentRegisterOneBinding
 
-class OneFragment : Fragment() {
-    lateinit var binding: FragmentOneBinding
+class RegisterOneFragment : Fragment() {
+    lateinit var binding: FragmentRegisterOneBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentOneBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        binding = FragmentRegisterOneBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 }

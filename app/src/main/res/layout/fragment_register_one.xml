@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:id="@+id/register_email"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:paddingVertical="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            tools:text="@string/register_email_title"/>
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            tools:text="@string/register_email_description_1"/>
+        <TextView
+            style="@style/text_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="77dp"
+            tools:text="@string/register_email_description_2"/>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/editText"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            tools:text="@string/edit_email"/>
+        <Button
+            android:id="@+id/email_btn"
+            style="@style/btn_default"
+            android:layout_marginBottom="5dp"
+            tools:text="@string/send_code"/>
+        <TextView
+            android:id="@+id/email_warning"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_sm"
+            android:textColor="@color/primary_color"
+            android:layout_marginBottom="50dp"
+            tools:text="warning"/>
+
+        <EditText
+            android:id="@+id/code"
+            style="@style/editText"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            tools:text="@string/edit_email"/>
+        <Button
+            android:id="@+id/code_btn"
+            style="@style/btn_default"
+            tools:text="@string/send_code"/>
+        <TextView
+            android:id="@+id/code_warning"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_sm"
+            android:textColor="@color/primary_color"
+            android:layout_marginBottom="50dp"
+            tools:text="warning"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

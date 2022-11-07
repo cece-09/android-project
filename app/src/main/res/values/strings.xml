@@ -27,5 +27,7 @@
     <string name="register_email_title">이메일 인증</string>
     <string name="register_email_description_1">학교 또는 기관 이메일을 인증해 주세요</string>
     <string name="register_email_description_2">왜 학교 또는 기관 인증이 필요한가요?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

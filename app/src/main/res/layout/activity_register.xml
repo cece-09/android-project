@@ -6,52 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
-    <fragment
-        android:name="com.example.myapplication.OneFragment"
-        android:id="@+id/register1"
+    <LinearLayout
+        android:id="@+id/register_fragment_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:paddingHorizontal="@dimen/activity_horizontal_margin"
-            android:paddingVertical="@dimen/activity_vertical_margin"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="22.6dp"
-                android:adjustViewBounds="true"
-                android:maxWidth="500dp"
-                android:maxHeight="200dp"
-                android:src="@drawable/taxi"/>
-            <TextView
-                style="@style/text_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="6dp"
-                android:gravity="center_horizontal"
-                tools:text="@string/app_name" />
-            <TextView
-                android:layout_width="254dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="44dp"
-                android:gravity="center_horizontal"
-                tools:text="@string/app_description"
-                style="@style/text"
-                />
-            <Button
-                android:id="@+id/btn_pass"
-                android:layout_marginBottom="17.5dp"
-                tools:text="@string/register_start_with_pass"
-                style="@style/btn_pass"/>
-            <Button
-                android:id="@+id/btn_kakao"
-                android:layout_marginBottom="17.5dp"
-                tools:text="@string/register_start_with_kakao"
-                style="@style/btn_kakao"/>
-        </LinearLayout>
-    </fragment>
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:paddingVertical="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/btn_default"
+            tools:text="next" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
